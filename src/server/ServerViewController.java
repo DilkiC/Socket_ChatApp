@@ -23,7 +23,7 @@ public class ServerViewController {
 
 
     public void initialize(){
-        new Thread(()->{
+        /*new Thread(()->{
             try {
                 serverSocket=new ServerSocket(5000);
                 socket=serverSocket.accept();
@@ -41,15 +41,15 @@ public class ServerViewController {
                 e.printStackTrace();
             }
 
-        }).start();
+        }).start();*/
     }
 
     public void sendOnAction(ActionEvent actionEvent) throws IOException {
-        String messageOut="";
+       /* String messageOut="";
         messageOut=txtMessage.getText();
         dataOutputStream.writeUTF(messageOut);
         txtMessageArea.appendText("\nServer : "+messageOut);
-        txtMessage.setText("");
+        txtMessage.setText("");*/
 
     }
 
