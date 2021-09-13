@@ -11,11 +11,12 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class ClientViewController {
+public class LoginViewController {
 
     public TextArea txtMessageArea;
     public TextField txtMessage;
     public Label lblName;
+    public TextField txtUserName;
 
     Socket socket;
     DataInputStream dataInputStream;
@@ -49,6 +50,9 @@ public class ClientViewController {
         txtMessageArea.appendText("\nClient : "+messageOut);
         txtMessage.setText("");
 
+    }
+
+    public void loginOnAction(ActionEvent actionEvent) {
     }
 }
 
